@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-.product {
+.card {
   background-color: #fff;
   border-radius: $border-radius;
   border-width: 1px;
@@ -42,6 +42,7 @@ body {
   }
 
   &__button {
+    display: block;
     width: 100%;
     height: 40px;
     background-color: $color-primary;
@@ -51,7 +52,10 @@ body {
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+    text-align: center;
+    line-height: 40px;
     text-transform: uppercase;
+    text-decoration: none;
 
     &:hover {
       background-color: #fff;
@@ -61,44 +65,44 @@ body {
       border-color: $color-primary;
     }
   }
-}
 
-.reviews {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-
-  &__count {
-    margin: 0;
-    font-size: $font-size-sm;
-    font-weight: 400;
-    line-height: 14px;
-    color: $color-text;
-  }
-}
-
-.price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-
-  &__text {
-    margin: 0;
-    font-size: $font-size-md;
-    font-weight: 400;
-    line-height: 18px;
-    color: $color-text-light;
-  }
-
-  &__count {
+  &__price {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-    font-size: $font-size-lg;
-    font-weight: 700;
-    line-height: 18px;
-    color: $color-text;
+    margin-bottom: 16px;
+
+    &-text {
+      margin: 0;
+      font-size: $font-size-md;
+      font-weight: 400;
+      line-height: 18px;
+      color: $color-text-light;
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      font-size: $font-size-lg;
+      font-weight: 700;
+      line-height: 18px;
+      color: $color-text;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &-count {
+      margin: 0;
+      font-size: $font-size-sm;
+      font-weight: 400;
+      line-height: 14px;
+      color: $color-text;
+    }
   }
 }
