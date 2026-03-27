@@ -1,6 +1,4 @@
 @import './blocks/variables';
-@import './blocks/card';
-@import './blocks/stars';
 
 * {
   margin: 0;
@@ -12,3 +10,6 @@ html {
   font-family: $font-base;
   font-style: normal;
 }
+
+@import './blocks/card';
+@import './blocks/stars';
