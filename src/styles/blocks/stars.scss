@@ -2,21 +2,21 @@
   display: flex;
   align-items: center;
   gap: 4px;
-}
 
-.star {
-  width: $star-size;
-  height: $star-size;
-  background-image: url('../images/star.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &__star {
+    width: $star-size;
+    height: $star-size;
+    background-image: url('../../images/star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-@for $i from 1 through 5 {
-  .stars--#{$i} {
-    @for $j from 1 through $i {
-      .star:nth-child(#{$j}) {
-        background-image: url('../images/star-active.svg');
+  @for $i from 1 through 5 {
+    .stars--#{$i} {
+      @for $j from 1 through $i {
+        .star:nth-child(#{$j}) {
+          background-image: url('..//../images/star-active.svg');
+        }
       }
     }
   }
